@@ -22,7 +22,6 @@ spec:
     matchLabels:
       component: backend
       tier: app
-      project: expense
   # pod definition
   template:
     metadata:
@@ -52,5 +51,5 @@ spec:
     project: expense
   ports:
   - protocol: TCP
-    port: 80 #service-port
-    targetPort: 80 #target-port
+    port: 8080 #service-port
+    targetPort: 8080 #target-port
