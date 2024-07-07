@@ -21,6 +21,7 @@ spec:
   selector:
     matchLabels:
       component: backend
+      project: expense
       tier: app
   # pod definition
   template:
